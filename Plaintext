@@ -1,0 +1,9 @@
+HOTEL (HotelID PK, Name, Address)
+
+CLIENT (ClientID PK, Name, Phone, Email)
+
+ROOM (RoomID PK, Number, Type, Price, HotelID FK)
+
+RESERVATION (ReservationID PK, Date, ClientID FK, HotelID FK)
+
+STAY (StayID PK, ClientID FK, RoomID FK, StartDate, EndDate)
